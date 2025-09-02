@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaS Landing Page</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MySaaS</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#pricing" class="hover:text-blue-600">Pricing</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="#signup" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Simplify Your Workflow</h2>
+    <p class="text-lg md:text-xl mb-6">Our SaaS helps you manage tasks, projects, and productivity—all in one place.</p>
+    <a href="#signup" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Get Started</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-10">
+    <div class="p-6 bg-white shadow rounded-lg text-center">
+      <h3 class="text-xl font-semibold mb-2">🚀 Fast</h3>
+      <p>Experience lightning-fast performance with our optimized platform.</p>
+    </div>
+    <div class="p-6 bg-white shadow rounded-lg text-center">
+      <h3 class="text-xl font-semibold mb-2">🔒 Secure</h3>
+      <p>Your data is safe with top-notch security and encryption.</p>
+    </div>
+    <div class="p-6 bg-white shadow rounded-lg text-center">
+      <h3 class="text-xl font-semibold mb-2">📊 Analytics</h3>
+      <p>Track your growth with real-time insights and dashboards.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Pricing</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Free Plan</h3>
+          <p class="text-2xl font-bold my-4">$0/month</p>
+          <ul class="mb-6 space-y-2">
+            <li>✔ Basic features</li>
+            <li>✔ 1 project</li>
+            <li>✔ Email support</li>
+            <li>✔ Easy to use</li>
+          </ul>
+          <a href="#signup" class="block bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Choose Free</a>
+        </div>
+        <div class="bg-white p-6 shadow rounded-lg">
+          <h3 class="text-xl font-semibold">Pro Plan</h3>
+          <p class="text-2xl font-bold my-4">$9/month</p>
+          <ul class="mb-6 space-y-2">
+            <li>✔ All features</li>
+            <li>✔ Unlimited projects</li>
+            <li>✔ Priority support</li>
+            <li>✔ Faster</li>
+          </ul>
+          <a href="#signup" class="block bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Choose Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign Up -->
+  <section id="signup" class="max-w-md mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-6">Sign Up</h2>
+    <form action="http://localhost:5000/signup" method="POST"
+      class="bg-white shadow-lg rounded-lg p-6 space-y-4">
+  <input name="name" type="text" placeholder="Full Name" class="w-full p-3 border rounded-lg" required />
+  <input name="email" type="email" placeholder="Email" class="w-full p-3 border rounded-lg" required />
+  <input name="password" type="password" placeholder="Password" class="w-full p-3 border rounded-lg" required />
+  <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+    Create Account
+  </button>
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6">
+    <p>&copy; 2025 MySaaS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
